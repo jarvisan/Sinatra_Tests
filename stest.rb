@@ -2,7 +2,7 @@ require 'sinatra'
 require 'test_gem'
 
 get '/FizzBuzz/' do
-	'Enter A Number after FizzBuzz and then a format(plain, html or json), ex: FizzBuzz/45/json'
+	'Enter a Number after FizzBuzz and then a format(plain, html or json), ex: FizzBuzz/45/json'
 end
 
 get '/FizzBuzz/:num/json' do
