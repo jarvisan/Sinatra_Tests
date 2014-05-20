@@ -1,7 +1,7 @@
 require 'test_gem'
 
 get '/' do
-	'Enter a Number after FizzBuzz and then a format(plain, html or json), ex: /45/json'
+	erb :index	
 end
 
 get '/:num/json' do
