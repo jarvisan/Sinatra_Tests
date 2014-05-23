@@ -4,6 +4,10 @@ get '/' do
 	erb :index	
 end
 
+post '/FizzBuzz' do
+	main(params[:num], params[:formatOpt])
+end
+
 get '/:num/json' do
 	main(params[:num], 'json')
 end
@@ -18,8 +22,4 @@ end
 
 get '/:num/*' do
 	redirect "/"
-end
-
-get '/?num=*&formatOpt=*'
-	main(params[:num], [:formatOpt])
 end
