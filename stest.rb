@@ -19,3 +19,7 @@ end
 get '/:num/*' do
 	redirect "/"
 end
+
+get '/?num=*&formatOpt=*'
+	main(params[:num], [:formatOpt])
+end
