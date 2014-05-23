@@ -4,8 +4,13 @@
 
 	<link href="/css/bootstrap.css" rel="stylesheet">
 
-	<h4>Enter a Number, select a format, then hit submit to FizzBuzz!</h4>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>Enter a Number, select a format, then hit submit to FizzBuzz!</h4>
+			</div>
+		</div>
+	</div>
 </head>
 
 <body>
@@ -15,7 +20,7 @@
 		<div class="container">
 			<div class="form-group">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-5">
 
 						<label for="inputNumber">Number</label>
 						<input type="number" class="form-control" id="inputNumber" name="num" placeholder="Enter A Number">	
@@ -24,20 +29,20 @@
 				<div class="row">
 					<div class="radio">
 
-						<div class="col-sm-3">
+						<div class="col-sm-2">
 							<label>
 								<input type="radio" name="formatOpt" value="plain">
 								plain text
 							</label>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-2">
 							<label>
 								<input type="radio" name="formatOpt" value="json">
 								json
 							</label>
 							</div
 							<label>
-								<div class="col-sm-3">
+								<div class="col-sm-2">
 									<input type="radio" name="formatOpt" value="html">
 									html
 								</label>
