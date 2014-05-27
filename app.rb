@@ -1,9 +1,11 @@
 require './lib/fizz_buzz'
+require './lib/formatter'
 
 get '/' do
 	erb :index	
 end
 
 post '/FizzBuzz' do
-	FizzBuzz.new.fizzbuzz(params[:num], params[:formatOpt])
+	fb = FizzBuzz.new(params[:num])
+	Formatter.new(fb.fizzbuzz).format_as(params[:format])
 end
