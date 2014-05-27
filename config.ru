@@ -1,5 +1,5 @@
 require 'sinatra'
-require './stest'
+require './app'
 
 run Sinatra::Application
 
