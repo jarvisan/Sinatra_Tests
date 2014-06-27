@@ -1,3 +1,4 @@
+require 'sinatra'
 require './lib/fizz_buzz'
 require './lib/formatter'
 

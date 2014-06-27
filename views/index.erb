@@ -24,6 +24,8 @@
 
 						<label for="inputNumber">Number</label>
 						<input type="number" class="form-control" id="inputNumber" name="num" placeholder="Enter A Number">	
+            <label for="inputNumJS">JS Style</label>
+            <input type="number" class="form-control" id="inputNumJS" name="numjs" placeholder="Or number here">
 					</div>
 				</div>
 				<div class="row">
@@ -54,12 +56,42 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<button type="submit" class="btn btn-default">Submit</button>
+              <button type="button" class="btn btn-default" onclick="fizzbuzz()">JS</button>
 						</div>
 					</div>
+          
+          <div class="row">
+            <div class = "col-sm-12">
+              <p id="JSFizz"></p>
+            </div>
 				</div>
+
 			</div>
 
 		</form>
+
+    <script>
+      function fizzbuzz() {
+        var max = document.getElementById('inputNumJS').value;
+
+        document.getElementById("JSFizz").innerHTML = "";
+
+        for(var i = 1; i <= max; i++){
+
+          if(i%15 === 0)
+            document.getElementById("JSFizz").innerHTML = document.getElementById("JSFizz").innerHTML + "FizzBuzz ";
+
+          else if(i%3 === 0)
+            document.getElementById("JSFizz").innerHTML = document.getElementById("JSFizz").innerHTML + "Fizz ";
+
+          else if(i%5 === 0)
+            document.getElementById("JSFizz").innerHTML = document.getElementById("JSFizz").innerHTML + "Buzz ";
+
+          else
+            document.getElementById("JSFizz").innerHTML = document.getElementById("JSFizz").innerHTML + i + " ";
+        }
+      }
+    </script>
 
 	</body>
 
